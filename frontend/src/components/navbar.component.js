@@ -5,6 +5,7 @@ export const Navbar = () => {
     <div>
         <img src="../../../assets/logo.png"/>
         <div>
+          
         </div>
     </div>
   )
