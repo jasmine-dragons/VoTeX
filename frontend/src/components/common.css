@@ -18,6 +18,34 @@
   background-color: #d2d7df;
 }
 
-.right-panel-toggle {
-  padding: 0 !important;
+.latex-editor {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 83%;
+  border: 4px black solid;
+  padding: 1%;
+  font-size: 16px;
+}
+
+.record {
+  background-color: transparent;
+  width: auto;
+}
+
+.new-line {
+  width: auto;
+}
+
+.button-menu {
+  display: flex;
+  vertical-align: center;
+}
+
+.dictaphone {
+  margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
