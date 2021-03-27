@@ -2,6 +2,74 @@ body {
   background-color: #353535;
 }
 
+h1 {
+  text-color: #353535;
+  font-family: Shanti;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 56px;
+  text-decoration-line: underline;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  font-family: Shanti;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  width: 50%;
+  padding: 1%;
+  border: none;
+}
+
+button.latex {
+  border-top-left-radius: 5%;
+}
+
+button.compiled {
+  border-top-right-radius: 5%;
+}
+
 .container {
   margin: 5%;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.flex-left {
+  justify-content: flex-start;
+}
+
+.flex-right {
+  justify-content: flex-end;
+}
+
+.left-panel {
+  padding: 0 1% 0 2%;
+  margin-right: 0.5%;
+  background-color: white;
+  border-radius: 5%;
+  height: 65vh;
+  width: 50%;
+}
+
+.right-panel {
+  padding: 0 1% 0 2%;
+  margin-left: 0.5%;
+  padding: 1%;
+  background-color: white;
+  border-radius: 5%;
+  height: 65vh;
+  width: 50%;
 }
