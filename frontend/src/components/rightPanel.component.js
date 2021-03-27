@@ -5,11 +5,11 @@ import './common.css'
 const RightPanel = (props) => {
   const [showLatex, setShowLatex] = useState(false)
   const [showCompiled, setShowCompiled] = useState(true)
-  const [content, setContent] = useState("What is $(3\\times 4) \\div (5-3)$") // have to escape \'s here
+  const [content, setContent] = useState("What is $(3\\times 4) \\div (5-3)$?") // have to escape \'s here
 
   return (
     <div className="right-panel">
-      <div className="right-panel-toggle">
+      <div>
         <button
           className={showLatex ? "active latex" : "inactive latex"}
           onClick={() => {
@@ -31,11 +31,16 @@ const RightPanel = (props) => {
       <br />
       {
         showLatex ?
-        <p> {content} </p> :
+        <textarea
+          type="text"
+          value={content}
+          className="latex-editor"
+          onChange={(e) => setContent(e.target.value)}
+        /> : content === "" ?
+        <p> Start talking to generate LaTeX! </p> :
         <p> <Latex>{content}</Latex> </p>
       }
     </div>
-
   )
 }
 

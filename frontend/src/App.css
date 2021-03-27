@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  text-color: #353535;
+  color: #353535;
   font-family: Shanti;
   font-style: normal;
   font-weight: normal;
@@ -11,6 +11,10 @@ h1 {
   line-height: 56px;
   text-decoration-line: underline;
   margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 4%;
 }
 
 p {
@@ -25,16 +29,17 @@ button {
   line-height: 36px;
   text-align: center;
   width: 50%;
-  padding: 1%;
+  padding: 1.75%;
   border: none;
+  cursor: pointer;
 }
 
 button.latex {
-  border-top-left-radius: 5%;
+  border-top-left-radius: 0%;
 }
 
 button.compiled {
-  border-top-right-radius: 5%;
+  border-top-right-radius: 0%;
 }
 
 .container {
@@ -56,8 +61,8 @@ button.compiled {
 }
 
 .left-panel {
-  padding: 0 1% 0 2%;
-  margin-right: 0.5%;
+  padding: 0 2% 2% 2%;
+  margin-right: 1%;
   background-color: white;
   border-radius: 5%;
   height: 65vh;
@@ -65,9 +70,8 @@ button.compiled {
 }
 
 .right-panel {
-  padding: 0 1% 0 2%;
-  margin-left: 0.5%;
-  padding: 1%;
+  padding: 0 2% 2% 2%;
+  margin-left: 1%;
   background-color: white;
   border-radius: 5%;
   height: 65vh;
