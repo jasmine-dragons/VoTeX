@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
 
-export default class Navbar extends Component {
-  
+export const Navbar = () => {
+  return(
+    <div>
+        <img src="../../../assets/logo.png"/>
+        <div>
+        </div>
+    </div>
+  )
 }
