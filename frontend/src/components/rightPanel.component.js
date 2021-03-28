@@ -9,7 +9,17 @@ const RightPanel = (props) => {
   const [content, setContent] = useState(latex) // have to escape \'s here
 
   useEffect(() => {
-    setContent(latex)
+    let temp = "$"
+    for(let i = 0; i < latex.length; i++){
+      if(latex[i] === "\\"){
+        temp += "\\"
+      }
+      else{
+        temp += latex[i]
+      }
+    }
+    temp += "$"
+    setContent(temp)
   }, [latex])
 
   return (
