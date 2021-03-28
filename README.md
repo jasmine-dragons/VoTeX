@@ -1,4 +1,5 @@
 # VoTeX
+*Online Assignments Made Easy*
 
 ## Inspiration
 
