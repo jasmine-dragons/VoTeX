@@ -7,6 +7,8 @@ Today, many students and teachers face the need to type out equations and formul
 
 Typically, many people use solutions like Microsoft Word to type out equations and format their documents, but this can get confusing and difficult. An alternative solution to this is LaTeX, which poses its own problems: it is time consuming, difficult, and confusing to learn and many teachers and students will not learn it. This is where **VoTeX** comes into play. VoTeX makes it easier to go from written or spoken work to LaTeX, via just your voice. 
 
+From personal experience, we have discovered the difficulties in scanning page after page of assignments. Not only is this time consuming and exhausting, but it also limits readability of documents, making it difficult for both teachers and students to communicate fluidly about their work.
+
 ## What it does
 
 VoTeX live translates words spoken into the microphone into plain text. Then, this plain text is converted to LaTeX form for ease of access. Users are also able to edit and compile this LaTeX code directly, to edit any mistakes in translation or add to the document. They are able to save PDF or TEX files from this speech and stich together voice recordings for longer and longer assignments. 
