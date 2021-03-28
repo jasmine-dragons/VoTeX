@@ -12,12 +12,14 @@ Typically, many people use solutions like Microsoft Word to type out equations a
 VoTeX live translates words spoken into the microphone into plain text. Then, this plain text is converted to LaTeX form for ease of access. Users are also able to edit and compile this LaTeX code directly, to edit any mistakes in translation or add to the document. They are able to save PDF or TEX files from this speech and stich together voice recordings for longer and longer assignments. 
 
 ## How we built it
-Starting with brainstorming, we found pressure points students and teachers K-12 faced. From there, we created designs on Figma and envisioned how we would want the project to be. The frontend is built using React. This was done through a series of components that handled various tasks and usage of other libraries and tools such as Bootstrap and React speech recognition to automate certain tasks. The backend was all created with Python and Flask.
 
 ### Design
+Starting with brainstorming, we found pressure points students and teachers K-12 faced. From there, we created designs on Figma and envisioned how we would want the project to be. 
+![image](https://user-images.githubusercontent.com/61072843/112743777-199f7100-8f4f-11eb-8563-e80579f13402.png)
+![image](https://user-images.githubusercontent.com/61072843/112743786-24f29c80-8f4f-11eb-8ecb-e3e00e106bc2.png)
 
 ### Code
-
+The frontend is built using React. This was done through a series of components that handled various tasks and usage of other libraries and tools such as Bootstrap and React speech recognition to automate certain tasks. The backend was all created with Python and Flask.
 
 ## Challenges we ran into
 The biggest challenge we ran into was the ability to connect all the parts together and make sure everything was integrated properly to handle some of the edge cases. 
