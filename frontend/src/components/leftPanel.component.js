@@ -5,7 +5,7 @@ const LeftPanel = (props) => {
   return (
     <div className="left-panel">
       <h1>Get Started</h1>
-      <p>Say something like "Integral from negative one to one of x squared dx equals zero."</p>
+      <p>Say something like "Integral from negative one to one of x squared dx."</p>
       <Dictaphone setLatex={props.setLatex}/>
     </div>
   )

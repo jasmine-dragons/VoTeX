@@ -36,15 +36,25 @@
 
 .new-line {
   width: auto;
+  height: auto;
+  border-radius: 5%;
 }
 
 .button-menu {
   display: flex;
   vertical-align: center;
+  justify-content: center;
 }
 
 .dictaphone {
   margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.giphy {
+  margin: 1% 0 0 0;
   display: block;
   margin-left: auto;
   margin-right: auto;

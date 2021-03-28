@@ -14,14 +14,14 @@ const Dictaphone = (props) => {
 
   return (
     <div className="dictaphone">
-      <div className="button-modal">
+      <div className="button-menu">
         {
           !recording ?
           <button className="record" onClick={SpeechRecognition.startListening}>
-            <img style={{height: "10vh"}} src="./icons/record.png" alt="record" onClick={() => setRecording(!recording)}/>
+            <img style={{height: "5vh"}} src="./icons/record.png" alt="record" onClick={() => setRecording(!recording)}/>
           </button> :
           <button className="record" onClick={SpeechRecognition.stopListening}>
-            <img style={{height: "10vh"}} src="./icons/stop.png" alt="record" onClick={() => {
+            <img style={{height: "5vh"}} src="./icons/stop.png" alt="record" onClick={() => {
               setRecording(!recording)
               setLatex("$\\int^{1}_{-1} x^2 dx$")
               // const data = {
@@ -38,7 +38,7 @@ const Dictaphone = (props) => {
           </button>
         }
         <button className="record" onClick={resetTranscript}>
-          <img style={{height: "10vh"}} src="./icons/reset.png" alt="stop" onClick={() => {
+          <img style={{height: "5vh"}} src="./icons/reset.png" alt="stop" onClick={() => {
             setLatex("")
           }}/>
         </button>
@@ -46,6 +46,11 @@ const Dictaphone = (props) => {
           New Line
         </button>
       </div>
+      {
+        recording ?
+        <iframe src="https://giphy.com/embed/aw6CWyyLQ8WyRuktxR" width="480" height="160" frameBorder="0" className="giphy" allowFullScreen></iframe> :
+        null
+      }
       <h3>Live Transcription: </h3>
       <p>{transcript}</p>
     </div>
