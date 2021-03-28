@@ -3,12 +3,14 @@ import './App.css';
 import LeftPanel from './components/leftPanel.component'
 import RightPanel from './components/rightPanel.component'
 import Navigation from './components/navbar.component'
+import TextBox from './components/text.component'
 
 function App() {
   const [latex, setLatex] = useState("Example: What is $(3\\times 4) \\div (5-3)$?")
   return (
     <div>
       <Navigation />
+      <TextBox/>
       <div className="container flexbox">
         <LeftPanel setLatex={setLatex} className="flex-left"/>
         <RightPanel latex={latex} className="flex-right"/>

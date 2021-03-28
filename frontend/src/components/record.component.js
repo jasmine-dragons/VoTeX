@@ -4,7 +4,7 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import './common.css'
 
 const Dictaphone = (props) => {
-  const [recording, setRecording] = useState(false)
+  const [ recording, setRecording ] = useState(false)
   const { latex, setLatex } = props
   const { transcript, resetTranscript } = useSpeechRecognition()
 
@@ -23,17 +23,16 @@ const Dictaphone = (props) => {
           <button className="record" onClick={SpeechRecognition.stopListening}>
             <img style={{height: "5vh"}} src="./icons/stop.png" alt="record" onClick={() => {
               setRecording(!recording)
-              setLatex("$\\int^{1}_{-1} x^2 dx$")
-              // const data = {
-              //   "text": output
-              // }
-              // axios.get('http://localhost:5000/', data)
-              // .then((res) => {
-              //   setLatex("$\\int^{1}_{-1} x^2 dx$")
-              // })
-              // .catch((error) => {
-              //   alert("Error translating. Please try again.")
-              // })
+              const data = {
+                "text": transcript
+              }
+              axios.post('http://localhost:5000/', data)
+              .then((res) => {
+                setLatex(res.data.latex)
+              })
+              .catch((error) => {
+                alert("Error translating. Please try again.")
+              })
             }}/>
           </button>
         }
@@ -42,7 +41,7 @@ const Dictaphone = (props) => {
             setLatex("")
           }}/>
         </button>
-        <button className="new-line" onClick={() => setLatex(latex + " $\\int^{1}_{-1} x^2 dx$")}>
+        <button className="new-line" >
           New Line
         </button>
       </div>
