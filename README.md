@@ -28,7 +28,10 @@ On the left panel of the home page, users can record and view a live transcripti
 The response is then piped into the right panel, which includes a live LaTeX translation populated by the API’s response. To further customize the audio translation inputted, users can take advantage of the live LaTeX editor and compiler built in to the right panel. Here’s an example of VoTeX in action.
 
 ### Code
-The frontend is built using React. This was done through a series of components that handled various tasks and usage of other libraries and tools such as Bootstrap and React speech recognition to automate certain tasks. The backend was all created with Python and Flask.
+The frontend is built using React. This was done through a series of components that handled various tasks and usage of other libraries and tools such as Bootstrap and React speech recognition to automate certain tasks. The backend was all created with Python and Flask in order to enable Machine Learning.  
+
+![image](https://user-images.githubusercontent.com/66970460/112744619-8833fd00-8f56-11eb-85b6-95a198aa12c0.png)
+
 
 ## Challenges we ran into
 The biggest challenge we ran into was the ability to connect all the parts together and make sure everything was integrated properly to handle some of the edge cases. 
