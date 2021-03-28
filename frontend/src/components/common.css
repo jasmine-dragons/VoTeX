@@ -34,6 +34,13 @@
   width: auto;
 }
 
+.download {
+  background-color: transparent;
+  width: auto;
+  margin-left: 95%;
+  margin-top: 55%;
+}
+
 .new-line {
   width: auto;
   height: auto;
@@ -58,4 +65,16 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.text {
+  color: white;
+  /* background: white; */
+  margin-left: 5vw;
+  width: 90%;
+  font-size: 1.5rem;
+  font-family: Shanti;
+  font-style: normal;
+  font-weight: normal;
+  padding: 1%;
 }

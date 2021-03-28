@@ -23,9 +23,8 @@ const Dictaphone = (props) => {
           <button className="record" onClick={SpeechRecognition.stopListening}>
             <img style={{height: "5vh"}} src="./icons/stop.png" alt="record" onClick={() => {
               setRecording(!recording)
-              // setLatex("$\\int^{1}_{-1} x^2 dx$")
               const data = {
-                "text": transcript //output
+                "text": transcript
               }
               axios.post('http://localhost:5000/', data)
               .then((res) => {

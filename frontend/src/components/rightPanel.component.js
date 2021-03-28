@@ -55,6 +55,8 @@ const RightPanel = (props) => {
         <p> Start talking to generate LaTeX! </p> :
         <p> <Latex>{content}</Latex> </p>
       }
+
+      <button className="download"><img style={{height: "5vh"}} src='/icons/download.png' alt='Download'/></button> 
     </div>
   )
 }
