@@ -14,16 +14,18 @@ VoTeX live translates words spoken into the microphone into plain text. Then, th
 ## How we built it
 
 ### Design
-Starting with brainstorming, we found pressure points students and teachers K-12 faced. From there, we created designs on Figma and envisioned how we would want the project to be. 
+We started by finding the pressure points students and teachers K-12 faced. From there, we created designs on Figma and wireframed various components that we would need.
 
 
 ![image](https://github.com/jasmine-dragons/VoTeX/raw/main/assets/latex-code.png)
 
-*Latex Code View*
+*Latex Code View*  
+On the left panel of the home page, users can record and view a live transcription of their spoken equations. This data is then sent to our python backend, which uses machine learning to interpret the plain-text as LaTeX.
 
 ![image](https://raw.githubusercontent.com/jasmine-dragons/VoTeX/main/assets/written-format.png)
 
-*Written Code View*
+*Written Code View*  
+The response is then piped into the right panel, which includes a live LaTeX translation populated by the API’s response. To further customize the audio translation inputted, users can take advantage of the live LaTeX editor and compiler built in to the right panel. Here’s an example of VoTeX in action.
 
 ### Code
 The frontend is built using React. This was done through a series of components that handled various tasks and usage of other libraries and tools such as Bootstrap and React speech recognition to automate certain tasks. The backend was all created with Python and Flask.
