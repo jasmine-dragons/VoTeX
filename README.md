@@ -9,6 +9,8 @@ Typically, many people use solutions like Microsoft Word to type out equations a
 
 ## What it does
 
+VoTeX live translates words spoken into the microphone into plain text. Then, this plain text is converted to LaTeX form for ease of access. Users are also able to edit and compile this LaTeX code directly, to edit any mistakes in translation or add to the document. They are able to save PDF or TEX files from this speech and stich together voice recordings for longer and longer assignments. 
+
 ## How we built it
 
 ## Challenges we ran into
