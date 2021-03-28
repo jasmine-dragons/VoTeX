@@ -1,6 +1,6 @@
 # VoTeX
 *Online Assignments Made Easy*
-![image](https://user-images.githubusercontent.com/61072843/112744214-db0bb580-8f52-11eb-840d-f715be13a8dd.png)
+![image](https://user-images.githubusercontent.com/61072843/112744219-ef4fb280-8f52-11eb-939e-1f63f6633cc3.png)
 
 ## Inspiration
 
