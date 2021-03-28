@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Latex from 'react-latex'
 import './common.css'
 
 const RightPanel = (props) => {
+  const { latex } = props
   const [showLatex, setShowLatex] = useState(false)
   const [showCompiled, setShowCompiled] = useState(true)
-  const [content, setContent] = useState("What is $(3\\times 4) \\div (5-3)$?") // have to escape \'s here
+  const [content, setContent] = useState(latex) // have to escape \'s here
+
+  useEffect(() => {
+    setContent(latex)
+  }, [latex])
 
   return (
     <div className="right-panel">

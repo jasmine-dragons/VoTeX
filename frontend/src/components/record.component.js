@@ -1,18 +1,15 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 import './common.css'
 
-const Dictaphone = () => {
+const Dictaphone = (props) => {
   const [recording, setRecording] = useState(false)
-  const [output, setOutput] = useState("")
+  const { latex, setLatex } = props
   const { transcript, resetTranscript } = useSpeechRecognition()
 
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
     return null
-  }
-
-  const handleSubmit = () => {
-    
   }
 
   return (
@@ -26,14 +23,26 @@ const Dictaphone = () => {
           <button className="record" onClick={SpeechRecognition.stopListening}>
             <img style={{height: "10vh"}} src="./icons/stop.png" alt="record" onClick={() => {
               setRecording(!recording)
-              handleSubmit()
+              setLatex("$\\int^{1}_{-1} x^2 dx$")
+              // const data = {
+              //   "text": output
+              // }
+              // axios.get('http://localhost:5000/', data)
+              // .then((res) => {
+              //   setLatex("$\\int^{1}_{-1} x^2 dx$")
+              // })
+              // .catch((error) => {
+              //   alert("Error translating. Please try again.")
+              // })
             }}/>
           </button>
         }
         <button className="record" onClick={resetTranscript}>
-          <img style={{height: "10vh"}} src="./icons/reset.png" alt="stop" />
+          <img style={{height: "10vh"}} src="./icons/reset.png" alt="stop" onClick={() => {
+            setLatex("")
+          }}/>
         </button>
-        <button className="new-line" onClick={() => setOutput(transcript + "\\\\")}>
+        <button className="new-line" onClick={() => setLatex(latex + " $\\int^{1}_{-1} x^2 dx$")}>
           New Line
         </button>
       </div>
