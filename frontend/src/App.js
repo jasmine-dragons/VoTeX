@@ -7,10 +7,12 @@ import Navigation from './components/navbar.component'
 function App() {
   const [latex, setLatex] = useState("Example: What is $(3\\times 4) \\div (5-3)$?")
   return (
-    <div className="container flexbox">
+    <div>
       <Navigation />
-      <LeftPanel setLatex={setLatex} className="flex-left"/>
-      <RightPanel latex={latex} className="flex-right"/>
+      <div className="container flexbox">
+        <LeftPanel setLatex={setLatex} className="flex-left"/>
+        <RightPanel latex={latex} className="flex-right"/>
+      </div>
     </div>
   );
 }

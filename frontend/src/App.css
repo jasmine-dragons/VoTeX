@@ -98,5 +98,5 @@ button.compiled {
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #5cb8cc;
-  color: white;
+  color: black;
 }

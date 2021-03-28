@@ -7,9 +7,9 @@ const Navigation = () => {
       <a className="active" href="#home">
         VoTeX
       </a>
-      <a href="#news">New Page</a>
-      <a href="#contact">Sign Up</a>
-      <a href="#about">Log In</a>
+      <a href="">New Page</a>
+      <a href="">Sign Up</a>
+      <a href="">Log In</a>
     </div>
   );
 };
